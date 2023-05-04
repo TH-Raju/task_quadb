@@ -12,12 +12,12 @@ const Home = () => {
     }, [])
     console.log(user);
     return (
-        <div>
+        <div className=''>
             <h1 className='text-center text-2xl md:text-3xl my-10 lg:text-5xl font-bold'>Choose Your Favourite Movie From Here</h1>
             <div className='flex justify-center  mb-10'>
                 <Link to='/order'><button className='btn btn-primary'>Your Order</button></Link>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+            <div className='ml-5 md:ml-14 lg:ml-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
                     user.map(usr => <div key={usr.show.id}>
                         <div>
